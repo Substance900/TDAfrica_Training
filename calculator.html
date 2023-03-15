@@ -10,17 +10,36 @@
     <h1> Simple Interest Calcualtor</h1>
 
     <div>
-        <h3>Amount</h3>
+        <label for="amount">Amount</label>
         <input type="number" id="amount" required/>
     </div>
-    <div><h3>Interest Rate</h3>
-    <input/>
+    <div><label for="rate">Interest Rate</label>
+    <input type="range" id="rate" onchange="getRate()"/><span id="rate_value">10%</span>
     </div>
-    <div><h3>No. od Years</h3>
-    <input type="number"></div>
+    <div><label for="year">No. of Years</label>
+    <select type="number" id="year">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select></div>
 
-    <button onclick="compute">Compute Interest</button>
+    <button onclick="compute()" id="show">Compute Interest</button>
 
     <div id="displayResult"></div>
+
+    <footer>
+        &#169; Everyone can Get Rich <br> This calculator belongs to Oluwafemi Olaoye
+    </footer>
 </body>
+
+<script src="calculator.js">
+    
+</script>
 </html>

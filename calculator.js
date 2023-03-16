@@ -5,7 +5,7 @@ function compute() {
 
     var total= (amount*year*rate)/100
 
-    document.getElementById("displayResult").innerText="If you deposit "+amount+" at an interest rate of "+rate+"% You will receive an amount "+total+" in the year "+(2022+year);
+    document.getElementById("displayResult").innerHTML="If you deposit <mark>"+amount+"</mark> at an interest rate of <mark>"+rate+"% </mark> <br>You will receive an amount <mark>"+total+"</mark> in the year <mark>"+( new Date().getFullYear()+parseInt(year))+"</mark>";
 }
 
 function getRate() {
